@@ -28,7 +28,7 @@ try:
         if sck.connect_ex((ip_to_scan, port)) == 0:
             print(' >', port, 'is opened', ' '*20)     # If port is opened, it will be printed
         print(' Scanning', str(port) + '/' + str(last_port), end='\r')     # Progress information
-        sck.close()     # Close connection
+        sck.close()     # Close connection 
 except: 
     input(' Error occurred. Probably you provided wrong IP or domain name.') 
     sys.exit(0)
